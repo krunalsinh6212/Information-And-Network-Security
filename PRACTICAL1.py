@@ -14,8 +14,8 @@ def caesar_cipher_encrypt(text, shift):
 def caesar_cipher_decrypt(cipher_text, shift): 
     return caesar_cipher_encrypt(cipher_text, -shift) 
  
-plain_text = input() 
-shift_value = 5 
+plain_text = input("ENTER THE PLAIN TEXT : ") 
+shift_value = int(input("ENTER THE KEY VALUE : ")) 
 encrypted_text = caesar_cipher_encrypt(plain_text, shift_value) 
 decrypted_text = caesar_cipher_decrypt(encrypted_text, shift_value) 
 print("Original Text:", plain_text) 
